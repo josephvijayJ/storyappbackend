@@ -23,7 +23,7 @@ app.post('/api/upload', async (req, res) => {
   try {
     const fileStr = req.body.data;
     const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
-      upload_preset: 'blog_image',
+      upload_preset: 'jose_blog',
     });
 
     const url = uploadedResponse.secure_url;
